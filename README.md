@@ -1,6 +1,7 @@
 # EBReader网络爬取电子书使用说明
 ## 安装
 下载地址：https://plugins.jetbrains.com/plugin/download?rel=true&updateId=642178  
+支持idea版本 2022.2.5以上  
 插件初次开发，正在审核中，插件市场里搜不到，可以直接从这个地址下载。  
 ## 重要前置说明
 使用此功能的核心是正确使用“爬取表达式”  
