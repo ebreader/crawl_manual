@@ -126,7 +126,7 @@ html\`body\`a\[1-4\](\#href=^liang$\#)(\#name=^liang$\#)(\#class=^liang$\#)
 ## 爬取案例
 ### 使用快捷键  ALT + f 调出爬取界面，如下  
 ![image](https://github.com/user-attachments/assets/98fda731-499a-43ee-98c8-e0bbe8f79917)  
-#### 爬取一个电子书需要五个参数
+#### 一.爬取一个电子书需要五个参数
 1. 爬取地址：这里以https://ctext.org/shiji/ben-ji/zhs 地址为案例，爬取地址提供的页面上至少要能提供足够的章节信息。如下图：
    ![image](https://github.com/user-attachments/assets/e6371c70-3092-4582-abe6-c302e565ed91)  
 2. 资源基址：是章节信息里提供的链接的相对地址，如果章节信息里提供的是绝对地址的话这里可以不用填写。在这个案例里基址是：https://ctext.org  
@@ -144,10 +144,20 @@ html\`body\`a\[1-4\](\#href=^liang$\#)(\#name=^liang$\#)(\#class=^liang$\#)
 5. 章节内容选择器：也必须书写正确，这里是#content3\`table(#border=^0$#)\`tbody\`tr\`td(#class=^ctext$#){content=%}  
    表达式解析：选择id为content3的节点下面的border属性为0的table节点下面的tbody下面的所有tr下面的class属性为ctext的td节点，并将td本身及其所有子节点的text作为本章的内容。如下图所示  
    ![image](https://github.com/user-attachments/assets/20edf05a-69a8-4a03-9253-f3639a6ea488)
-
-   
-
-
-
-
-
+#### 二.爬取界面如下
+##### 1.爬取中  
+![企业微信截图_20241130151722](https://github.com/user-attachments/assets/002399b2-f8dd-4cdb-883b-df1da5960a28)
+爬取日志会输出在下方的textarea中  
+##### 2.爬取成功  
+![企业微信截图_20241130151744](https://github.com/user-attachments/assets/5590e227-2105-4bd0-ab92-8368b4ce2cb4)
+##### 3.爬取成功后并不会真正的保存这个电子书，你可以选择保存到你的阅读列表中，也可以选择导出。  
+![image](https://github.com/user-attachments/assets/a299a3bf-be3a-44a7-b754-20a467044e5d)
+##### 4.爬取参数还支持从一个properties文件中加载，其格式如下  
+![image](https://github.com/user-attachments/assets/17cad487-3476-4302-88e1-3ff6ffeff2ba)  
+## 有些复杂，遇到问题请联系作者
+微信：laoduwu006  
+邮箱：280202806@qq.com  
+QQ群：905014508  
+## 网路爬取说明至此完结，喜欢本软件的话，打赏作者鼓励持续更新维护
+![企业微信截图_20241130115101](https://github.com/user-attachments/assets/ab66f392-fd61-4df5-85ac-270cc867ae5c)
+![企业微信截图_20241130115141](https://github.com/user-attachments/assets/83b5d748-68b6-405f-8558-eaaa1e6ee917)
